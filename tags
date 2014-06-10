@@ -1,0 +1,209 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COLLECT_CURRENT_GET	data_global.h	113;"	d
+COLLECT_INSERTER	data_global.h	111;"	d
+COLLECT_TIME_GET	data_global.h	112;"	d
+DEV_CAMERA	data_global.h	27;"	d
+DEV_GPRS	data_global.h	29;"	d
+DEV_LED	data_global.h	26;"	d
+DEV_ZIGBEE	data_global.h	30;"	d
+ENV_GET	data_global.h	110;"	d
+ENV_UPDATE	data_global.h	109;"	d
+GOODS_ADD	data_global.h	114;"	d
+GOODS_GET	data_global.h	116;"	d
+GOODS_IN	data_global.h	118;"	d
+GOODS_NUM	data_global.h	117;"	d
+GOODS_OUT	data_global.h	119;"	d
+GOODS_REDUCE	data_global.h	115;"	d
+MSGSIZE	data_global.h	53;"	d
+MSGTYPE	data_global.h	33;"	d
+MSG_BEEP	data_global.h	43;"	d
+MSG_BEEP_OFF	data_global.h	46;"	d
+MSG_BEEP_ON	data_global.h	47;"	d
+MSG_CAMERA	data_global.h	36;"	d
+MSG_CHGNUM	data_global.h	39;"	d
+MSG_CONNECT_SUCCESS	data_global.h	60;"	d
+MSG_LED	data_global.h	35;"	d
+MSG_LED_OFF	data_global.h	50;"	d
+MSG_LED_ON	data_global.h	49;"	d
+MSG_M0	data_global.h	42;"	d
+MSG_M0_BEEP_AU_OFF	data_global.h	69;"	d
+MSG_M0_BEEP_AU_ON	data_global.h	70;"	d
+MSG_M0_BEEP_OFF	data_global.h	67;"	d
+MSG_M0_BEEP_ON	data_global.h	68;"	d
+MSG_M0_FAN_OFF	data_global.h	62;"	d
+MSG_M0_FAN_ON1	data_global.h	63;"	d
+MSG_M0_FAN_ON2	data_global.h	64;"	d
+MSG_M0_FAN_ON3	data_global.h	65;"	d
+MSG_M0_LED_OFF	data_global.h	72;"	d
+MSG_M0_LED_ON	data_global.h	73;"	d
+MSG_M0_SEG_OFF	data_global.h	76;"	d
+MSG_M0_SEG_ON	data_global.h	75;"	d
+MSG_SETENV	data_global.h	38;"	d
+MSG_SIZE	data_global.h	52;"	d
+MSG_UART_SND	data_global.h	37;"	d
+MSG_WIFI	data_global.h	40;"	d
+PHONE_NUM_SIZE	data_global.h	101;"	d
+SMS_BRE	data_global.h	85;"	d
+SMS_HUM	data_global.h	83;"	d
+SMS_ILL	data_global.h	84;"	d
+SMS_MSG_BRE1	data_global.h	90;"	d
+SMS_MSG_BRE2	data_global.h	94;"	d
+SMS_MSG_HUM1	data_global.h	92;"	d
+SMS_MSG_HUM2	data_global.h	96;"	d
+SMS_MSG_ILL1	data_global.h	91;"	d
+SMS_MSG_ILL2	data_global.h	95;"	d
+SMS_MSG_TEM1	data_global.h	89;"	d
+SMS_MSG_TEM2	data_global.h	93;"	d
+SMS_STRNO1	data_global.h	86;"	d
+SMS_STRNO2	data_global.h	87;"	d
+SMS_TEM	data_global.h	82;"	d
+SQLITE_OPEN	data_global.h	106;"	d
+STORAGE_NUM	data_global.h	108;"	d
+__DATA_GLOBAL_HHHHHHHHHHHHHH__	data_global.h	2;"	d
+adc	data_global.h	/^	float adc;$/;"	m	struct:storage_info	access:public
+adcMIN	data_global.h	/^	float adcMIN;$/;"	m	struct:storage_info	access:public
+all_info_RT	data_global.h	/^struct env_info_clien_addr all_info_RT;\/\/»´æ÷ª∑æ≥±‰¡ø$/;"	v	typeref:struct:env_info_clien_addr
+battery	data_global.h	/^	float battery;$/;"	m	struct:storage_info	access:public
+buzzer_status	data_global.h	/^	unsigned char buzzer_status;$/;"	m	struct:storage_info	access:public
+center_phone	data_global.c	/^char center_phone[12] = "13800100500";$/;"	v
+collectEnv_operation_cmd	data_global.h	/^	int collectEnv_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
+cond_analysis	data_global.c	/^pthread_cond_t cond_analysis;$/;"	v
+cond_camera	data_global.c	/^pthread_cond_t cond_camera;$/;"	v
+cond_led	data_global.c	/^pthread_cond_t cond_led;$/;"	v
+cond_refresh	data_global.c	/^pthread_cond_t cond_refresh;$/;"	v
+cond_sms	data_global.c	/^pthread_cond_t cond_sms;$/;"	v
+cond_sqlite	data_global.c	/^pthread_cond_t cond_sqlite;$/;"	v
+cond_uart_snd	data_global.c	/^pthread_cond_t cond_uart_snd;$/;"	v
+create_table	main.c	/^extern void create_table ();$/;"	p	file:
+dev_buzzer_fd	data_global.c	/^int dev_buzzer_fd;$/;"	v
+dev_camera_cmd	data_global.c	/^unsigned char dev_camera_cmd;	\/\/ÊëÑÂÉèÂ§¥ÂëΩ‰ª§$/;"	v
+dev_camera_fd	data_global.c	/^int dev_camera_fd;$/;"	v
+dev_infrared_fd	data_global.c	/^int dev_infrared_fd;$/;"	v
+dev_led_cmd	data_global.c	/^unsigned char dev_led_cmd;		\/\/LEDÂëΩ‰ª§$/;"	v
+dev_led_fd	data_global.c	/^int dev_led_fd;$/;"	v
+dev_sms_cmd	data_global.c	/^unsigned char dev_sms_cmd;    \/\/Áü≠‰ø°ÂëΩ‰ª§$/;"	v
+dev_sms_fd	data_global.c	/^int dev_sms_fd;$/;"	v
+dev_uart_fd	data_global.c	/^int dev_uart_fd;$/;"	v
+dev_uart_snd_cmd	data_global.c	/^unsigned char dev_uart_snd_cmd; \/\/‰∏≤Âè£ÂèëÈÄÅÂëΩ‰ª§$/;"	v
+env_info_clien_addr	data_global.h	/^struct env_info_clien_addr$/;"	s
+env_info_clien_addr::storage_no	data_global.h	/^	struct storage_info storage_no[STORAGE_NUM];	$/;"	m	struct:env_info_clien_addr	typeref:struct:env_info_clien_addr::storage_info	access:public
+env_info_clien_addr_s	data_global.h	/^struct env_info_clien_addr env_info_clien_addr_s;\/\/ª∫¥Êª∑æ≥–≈œ¢$/;"	v	typeref:struct:env_info_clien_addr
+env_operation_cmd	data_global.h	/^	int env_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
+fan_status	data_global.h	/^	unsigned char fan_status;	\/\/∑Á…»µƒø™πÿ◊¥Ã¨$/;"	m	struct:storage_info	access:public
+getGoodsMsg	data_global.h	/^struct getGoodsMsg$/;"	s
+getGoodsMsg::goodsno	data_global.h	/^	unsigned char goodsno;$/;"	m	struct:getGoodsMsg	access:public
+getGoodsMsg::goodsnum	data_global.h	/^	unsigned char goodsnum;$/;"	m	struct:getGoodsMsg	access:public
+getGoodsMsg::io	data_global.h	/^	unsigned char io;$/;"	m	struct:getGoodsMsg	access:public
+getGoodsMsg::sto_no	data_global.h	/^	unsigned char sto_no;$/;"	m	struct:getGoodsMsg	access:public
+goodsKinds	data_global.c	/^int goodsKinds;$/;"	v
+goods_count	data_global.h	/^	unsigned int goods_count;$/;"	m	struct:storage_goods_info	access:public
+goods_info	data_global.h	/^	struct storage_goods_info goods_info[GOODS_NUM];$/;"	m	struct:storage_info	typeref:struct:storage_info::storage_goods_info	access:public
+goods_operation_cmd	data_global.h	/^	int goods_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
+goods_type	data_global.h	/^	unsigned char goods_type;$/;"	m	struct:storage_goods_info	access:public
+goodsno	data_global.h	/^	unsigned char goodsno;$/;"	m	struct:getGoodsMsg	access:public
+goodsnum	data_global.h	/^	unsigned char goodsnum;$/;"	m	struct:getGoodsMsg	access:public
+humidity	data_global.h	/^	float humidity;$/;"	m	struct:storage_info	access:public
+humidityMAX	data_global.h	/^	float humidityMAX;$/;"	m	struct:storage_info	access:public
+humidityMIN	data_global.h	/^	float humidityMIN;$/;"	m	struct:storage_info	access:public
+id_analysis	main.c	/^			id_analysis,$/;"	v
+id_camera	main.c	/^			id_camera,$/;"	v
+id_led	main.c	/^pthread_t   id_led,$/;"	v
+id_msgq	main.c	/^			id_msgq,$/;"	v
+id_refresh	main.c	/^			id_refresh;$/;"	v
+id_sms	main.c	/^			id_sms,$/;"	v
+id_sqlite	main.c	/^			id_sqlite,$/;"	v
+id_transfer	main.c	/^			id_transfer,$/;"	v
+id_uart_snd	main.c	/^			id_uart_snd,$/;"	v
+illumination	data_global.h	/^	float illumination;$/;"	m	struct:storage_info	access:public
+illuminationMAX	data_global.h	/^	float illuminationMAX;$/;"	m	struct:storage_info	access:public
+illuminationMIN	data_global.h	/^	float illuminationMIN;$/;"	m	struct:storage_info	access:public
+io	data_global.h	/^	unsigned char io;$/;"	m	struct:getGoodsMsg	access:public
+led_status	data_global.h	/^	unsigned char led_status;$/;"	m	struct:storage_info	access:public
+main	main.c	/^int main(int argc, const char *argv[])$/;"	f	signature:(int argc, const char *argv[])
+msg	data_global.h	/^typedef struct msg{$/;"	s
+msg::mtype	data_global.h	/^	long mtype;$/;"	m	struct:msg	access:public
+msg::text	data_global.h	/^	char text[MSG_SIZE];$/;"	m	struct:msg	access:public
+msg::type	data_global.h	/^	long type;$/;"	m	struct:msg	access:public
+msg_s	data_global.h	/^}msg_s;$/;"	t	typeref:struct:msg
+msgqid	data_global.c	/^int msgqid;$/;"	v
+mtype	data_global.h	/^	long mtype;$/;"	m	struct:msg	access:public
+mutex_analysis	data_global.c	/^pthread_mutex_t mutex_analysis;$/;"	v
+mutex_camera	data_global.c	/^pthread_mutex_t mutex_camera;$/;"	v
+mutex_chg_cntnum	data_global.c	/^pthread_mutex_t mutex_chg_cntnum;$/;"	v
+mutex_chg_rcvnum	data_global.c	/^pthread_mutex_t mutex_chg_rcvnum;$/;"	v
+mutex_global	data_global.c	/^pthread_mutex_t mutex_global;$/;"	v
+mutex_led	data_global.c	/^pthread_mutex_t mutex_led;$/;"	v
+mutex_linklist	data_global.c	/^pthread_mutex_t mutex_linklist;$/;"	v
+mutex_refresh	data_global.c	/^pthread_mutex_t mutex_refresh;$/;"	v
+mutex_slinklist	data_global.c	/^pthread_mutex_t mutex_slinklist;$/;"	v
+mutex_sms	data_global.c	/^pthread_mutex_t mutex_sms;$/;"	v
+mutex_sqlite	data_global.c	/^pthread_mutex_t mutex_sqlite;$/;"	v
+mutex_uart_snd	data_global.c	/^pthread_mutex_t mutex_uart_snd;$/;"	v
+pthread_analysis	main.c	/^extern void *pthread_analysis (void *);			\/\/ ˝æ›Ω‚Œˆœﬂ≥Ã$/;"	p	file:	signature:(void *)
+pthread_camera	main.c	/^extern void* pthread_camera(void*);$/;"	p	file:	signature:(void*)
+pthread_led	main.c	/^extern void* pthread_led(void*);$/;"	p	file:	signature:(void*)
+pthread_msgq	main.c	/^extern void* pthread_msgq(void*);$/;"	p	file:	signature:(void*)
+pthread_refresh	main.c	/^extern void *pthread_refresh (void *);	\/\/π≤œÌƒ⁄¥Ê ˝æ›À¢–¬œﬂ≥Ã$/;"	p	file:	signature:(void *)
+pthread_sms	main.c	/^extern void* pthread_sms(void*);$/;"	p	file:	signature:(void*)
+pthread_sqlite	main.c	/^extern void *pthread_sqlite (void *);			\/\/ ˝æ›ø‚œﬂ≥Ã$/;"	p	file:	signature:(void *)
+pthread_transfer	main.c	/^extern void *pthread_transfer (void *);	$/;"	p	file:	signature:(void *)
+pthread_uart_snd	main.c	/^extern void* pthread_uart_snd(void*);$/;"	p	file:	signature:(void*)
+receive_phone	data_global.c	/^char receive_phone[12] = "18688370343";$/;"	v
+release_resource	main.c	/^void release_resource(int signo)$/;"	f	signature:(int signo)
+samplingTime	data_global.h	/^	char samplingTime[20]; \/\/ªÒ»°≤÷ø‚ª∑æ≥–≈œ¢µƒ ±º‰$/;"	m	struct:storage_info	access:public
+seg_status	data_global.h	/^	unsigned char seg_status; \/\/ ˝¬Îπ‹µƒø™πÿ◊¥Ã¨	$/;"	m	struct:storage_info	access:public
+semid	data_global.c	/^int semid;$/;"	v
+sendMsgQueue	data_global.c	/^void sendMsgQueue (long type, unsigned char text)$/;"	f	signature:(long type, unsigned char text)
+setLimit	main.c	/^void setLimit (int sto_no, float temMAX, float temMIN, float humMAX, float humMIN, float illMAX, float illMIN)$/;"	f	signature:(int sto_no, float temMAX, float temMIN, float humMAX, float humMIN, float illMAX, float illMIN)
+shmid	data_global.c	/^int shmid;$/;"	v
+sqlite_operation	data_global.h	/^struct sqlite_operation$/;"	s
+sqlite_operation::collectEnv_operation_cmd	data_global.h	/^	int collectEnv_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
+sqlite_operation::env_operation_cmd	data_global.h	/^	int env_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
+sqlite_operation::goods_operation_cmd	data_global.h	/^	int goods_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
+sqlite_operation::table_select_cmd	data_global.h	/^	int table_select_cmd;$/;"	m	struct:sqlite_operation	access:public
+sto_no	data_global.h	/^	unsigned char sto_no;$/;"	m	struct:getGoodsMsg	access:public
+storageNum	data_global.c	/^int storageNum;$/;"	v
+storage_RT	data_global.h	/^struct storage_info storage_RT[STORAGE_NUM];$/;"	v	typeref:struct:storage_info
+storage_goods_info	data_global.h	/^struct storage_goods_info$/;"	s
+storage_goods_info::goods_count	data_global.h	/^	unsigned int goods_count;$/;"	m	struct:storage_goods_info	access:public
+storage_goods_info::goods_type	data_global.h	/^	unsigned char goods_type;$/;"	m	struct:storage_goods_info	access:public
+storage_info	data_global.h	/^struct storage_info$/;"	s
+storage_info::adc	data_global.h	/^	float adc;$/;"	m	struct:storage_info	access:public
+storage_info::adcMIN	data_global.h	/^	float adcMIN;$/;"	m	struct:storage_info	access:public
+storage_info::battery	data_global.h	/^	float battery;$/;"	m	struct:storage_info	access:public
+storage_info::buzzer_status	data_global.h	/^	unsigned char buzzer_status;$/;"	m	struct:storage_info	access:public
+storage_info::fan_status	data_global.h	/^	unsigned char fan_status;	\/\/∑Á…»µƒø™πÿ◊¥Ã¨$/;"	m	struct:storage_info	access:public
+storage_info::goods_info	data_global.h	/^	struct storage_goods_info goods_info[GOODS_NUM];$/;"	m	struct:storage_info	typeref:struct:storage_info::storage_goods_info	access:public
+storage_info::humidity	data_global.h	/^	float humidity;$/;"	m	struct:storage_info	access:public
+storage_info::humidityMAX	data_global.h	/^	float humidityMAX;$/;"	m	struct:storage_info	access:public
+storage_info::humidityMIN	data_global.h	/^	float humidityMIN;$/;"	m	struct:storage_info	access:public
+storage_info::illumination	data_global.h	/^	float illumination;$/;"	m	struct:storage_info	access:public
+storage_info::illuminationMAX	data_global.h	/^	float illuminationMAX;$/;"	m	struct:storage_info	access:public
+storage_info::illuminationMIN	data_global.h	/^	float illuminationMIN;$/;"	m	struct:storage_info	access:public
+storage_info::led_status	data_global.h	/^	unsigned char led_status;$/;"	m	struct:storage_info	access:public
+storage_info::samplingTime	data_global.h	/^	char samplingTime[20]; \/\/ªÒ»°≤÷ø‚ª∑æ≥–≈œ¢µƒ ±º‰$/;"	m	struct:storage_info	access:public
+storage_info::seg_status	data_global.h	/^	unsigned char seg_status; \/\/ ˝¬Îπ‹µƒø™πÿ◊¥Ã¨	$/;"	m	struct:storage_info	access:public
+storage_info::storage_status	data_global.h	/^	unsigned char storage_status;				\/\/ 0:open 1:close$/;"	m	struct:storage_info	access:public
+storage_info::temperature	data_global.h	/^	float temperature;$/;"	m	struct:storage_info	access:public
+storage_info::temperatureMAX	data_global.h	/^	float temperatureMAX;$/;"	m	struct:storage_info	access:public
+storage_info::temperatureMIN	data_global.h	/^	float temperatureMIN;$/;"	m	struct:storage_info	access:public
+storage_info::x	data_global.h	/^	signed char x;$/;"	m	struct:storage_info	access:public
+storage_info::y	data_global.h	/^	signed char y;$/;"	m	struct:storage_info	access:public
+storage_info::z	data_global.h	/^	signed char z;$/;"	m	struct:storage_info	access:public
+storage_no	data_global.h	/^	struct storage_info storage_no[STORAGE_NUM];	$/;"	m	struct:env_info_clien_addr	typeref:struct:env_info_clien_addr::storage_info	access:public
+storage_status	data_global.h	/^	unsigned char storage_status;				\/\/ 0:open 1:close$/;"	m	struct:storage_info	access:public
+table_select_cmd	data_global.h	/^	int table_select_cmd;$/;"	m	struct:sqlite_operation	access:public
+temperature	data_global.h	/^	float temperature;$/;"	m	struct:storage_info	access:public
+temperatureMAX	data_global.h	/^	float temperatureMAX;$/;"	m	struct:storage_info	access:public
+temperatureMIN	data_global.h	/^	float temperatureMIN;$/;"	m	struct:storage_info	access:public
+text	data_global.h	/^	char text[MSG_SIZE];$/;"	m	struct:msg	access:public
+type	data_global.h	/^	long type;$/;"	m	struct:msg	access:public
+uart_snd_qhead	data_global.c	/^uart_snd_q* uart_snd_qhead;$/;"	v
+x	data_global.h	/^	signed char x;$/;"	m	struct:storage_info	access:public
+y	data_global.h	/^	signed char y;$/;"	m	struct:storage_info	access:public
+z	data_global.h	/^	signed char z;$/;"	m	struct:storage_info	access:public
