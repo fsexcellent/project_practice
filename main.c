@@ -116,8 +116,6 @@ int main(int argc, const char *argv[])
 	pthread_mutex_init (&mutex_global, NULL);
 	pthread_mutex_init (&mutex_linklist, NULL);
 
-	
-
 	pthread_cond_init(&cond_led, NULL);
 	pthread_cond_init(&cond_camera, NULL);
 	pthread_cond_init(&cond_uart_snd, NULL);

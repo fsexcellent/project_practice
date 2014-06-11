@@ -4,9 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
 COLLECT_CURRENT_GET	data_global.h	113;"	d
 COLLECT_INSERTER	data_global.h	111;"	d
 COLLECT_TIME_GET	data_global.h	112;"	d
+CROSS_COMPLIE	Makefile	/^CROSS_COMPLIE :=$/;"	m
+C_FLAGS	Makefile	/^C_FLAGS = -Wall -g$/;"	m
+Create_table	pthread_sqlite.h	/^int Create_table (void);  \/\/åˆ›å»ºæ•°æ®åº“è¡¨$/;"	p	signature:(void)
+DEBUG_SQLITE	pthread_sqlite.h	8;"	d
 DEV_CAMERA	data_global.h	27;"	d
 DEV_GPRS	data_global.h	29;"	d
 DEV_LED	data_global.h	26;"	d
@@ -19,6 +24,14 @@ GOODS_IN	data_global.h	118;"	d
 GOODS_NUM	data_global.h	117;"	d
 GOODS_OUT	data_global.h	119;"	d
 GOODS_REDUCE	data_global.h	115;"	d
+HEADERS	Makefile	/^HEADERS = $(wildcard *.h)$/;"	m
+HUMIDITY_MAX	pthread_sqlite.c	10;"	d	file:
+HUMIDITY_MIN	pthread_sqlite.c	11;"	d	file:
+ILLUMINATION_MAX	pthread_sqlite.c	12;"	d	file:
+ILLUMINATION_MIN	pthread_sqlite.c	13;"	d	file:
+Init_table_env	pthread_sqlite.c	/^int Init_table_env (void)$/;"	f	signature:(void)
+Init_table_env	pthread_sqlite.h	/^int  Init_table_env (void);  \/\/åˆå§‹åŒ–ç¯å¢ƒå‚æ•°è¡¨$/;"	p	signature:(void)
+LD_FLAGS	Makefile	/^LD_FLAGS = -lpthread -lsqlite3$/;"	m
 MSGSIZE	data_global.h	53;"	d
 MSGTYPE	data_global.h	33;"	d
 MSG_BEEP	data_global.h	43;"	d
@@ -47,6 +60,8 @@ MSG_SETENV	data_global.h	38;"	d
 MSG_SIZE	data_global.h	52;"	d
 MSG_UART_SND	data_global.h	37;"	d
 MSG_WIFI	data_global.h	40;"	d
+OBJFILES	Makefile	/^OBJFILES = $(SOURCES:%.c=%.o)$/;"	m
+PASSWORD	pthread_sqlite.c	22;"	d	file:
 PHONE_NUM_SIZE	data_global.h	101;"	d
 SMS_BRE	data_global.h	85;"	d
 SMS_HUM	data_global.h	83;"	d
@@ -62,15 +77,40 @@ SMS_MSG_TEM2	data_global.h	93;"	d
 SMS_STRNO1	data_global.h	86;"	d
 SMS_STRNO2	data_global.h	87;"	d
 SMS_TEM	data_global.h	82;"	d
+SOURCES	Makefile	/^SOURCES = $(wildcard *.c)$/;"	m
 SQLITE_OPEN	data_global.h	106;"	d
 STORAGE_NUM	data_global.h	108;"	d
+TARGET	Makefile	/^TARGET = program $/;"	m
+TELEPHONE_NUM	pthread_sqlite.c	14;"	d	file:
+TEMPERATURE_MAX	pthread_sqlite.c	8;"	d	file:
+TEMPERATURE_MIN	pthread_sqlite.c	9;"	d	file:
+USER_NAME	pthread_sqlite.c	21;"	d	file:
 __DATA_GLOBAL_HHHHHHHHHHHHHH__	data_global.h	2;"	d
+__SQLITE_LIST_QUEUE_H____	sqlite_link_list.h	2;"	d
+__SQLITE_TEST_H__	pthread_sqlite.h	2;"	d
+__UART_SND_QUEUE__HHHHHHHHHHHHHHH	uart_snd_queue.h	2;"	d
+__anon1::front	uart_snd_queue.h	/^	uart_snd_node* front;$/;"	m	struct:__anon1	access:public
+__anon1::rear	uart_snd_queue.h	/^	uart_snd_node* rear;$/;"	m	struct:__anon1	access:public
+_snode_	sqlite_link_list.h	/^typedef struct _snode_$/;"	s
+_snode_::data	sqlite_link_list.h	/^	struct sqlite_operation data;$/;"	m	struct:_snode_	typeref:struct:_snode_::sqlite_operation	access:public
+_snode_::data_link	sqlite_link_list.h	/^	struct env_info_clien_addr data_link;$/;"	m	struct:_snode_	typeref:struct:_snode_::env_info_clien_addr	access:public
+_snode_::goodsKinds	sqlite_link_list.h	/^	int goodsKinds;$/;"	m	struct:_snode_	access:public
+_snode_::next	sqlite_link_list.h	/^	struct _snode_ *next;$/;"	m	struct:_snode_	typeref:struct:_snode_::_snode_	access:public
+_snode_::storageNum	sqlite_link_list.h	/^	int storageNum;$/;"	m	struct:_snode_	access:public
 adc	data_global.h	/^	float adc;$/;"	m	struct:storage_info	access:public
 adcMIN	data_global.h	/^	float adcMIN;$/;"	m	struct:storage_info	access:public
+addGoods	pthread_sqlite.h	/^int addGoods (struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t, int goodsKinds_t);$/;"	p	signature:(struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t, int goodsKinds_t)
+add_goods	pthread_sqlite.c	/^int	add_goods(struct env_info_clien_addr env_info, int storageNum, int goodskinds)$/;"	f	signature:(struct env_info_clien_addr env_info, int storageNum, int goodskinds)
 all_info_RT	data_global.h	/^struct env_info_clien_addr all_info_RT;\/\/È«¾Ö»·¾³±äÁ¿$/;"	v	typeref:struct:env_info_clien_addr
 battery	data_global.h	/^	float battery;$/;"	m	struct:storage_info	access:public
 buzzer_status	data_global.h	/^	unsigned char buzzer_status;$/;"	m	struct:storage_info	access:public
+callback_getenv	pthread_sqlite.c	/^static int callback_getenv (void * para, int n_column, char ** column_value, char ** column_name )$/;"	f	file:	signature:(void * para, int n_column, char ** column_value, char ** column_name )
+callback_getenv_one	pthread_sqlite.c	/^static int callback_getenv_one (void * para, int n_column, char ** column_value, char ** column_name )$/;"	f	file:	signature:(void * para, int n_column, char ** column_value, char ** column_name )
+callback_getenv_s	pthread_sqlite.c	/^static int callback_getenv_s (void * para, int n_column, char ** column_value, char ** column_name )$/;"	f	file:	signature:(void * para, int n_column, char ** column_value, char ** column_name )
+callback_str	pthread_sqlite.c	/^char callback_str[20];$/;"	v
+callback_val	pthread_sqlite.c	/^float callback_val[6];\/\/è¯¦è§æ•°æ®åº“envè¡¨é¡¹$/;"	v
 center_phone	data_global.c	/^char center_phone[12] = "13800100500";$/;"	v
+cmd	uart_snd_queue.h	/^	unsigned char cmd;$/;"	m	struct:uart_node	access:public
 collectEnv_operation_cmd	data_global.h	/^	int collectEnv_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
 cond_analysis	data_global.c	/^pthread_cond_t cond_analysis;$/;"	v
 cond_camera	data_global.c	/^pthread_cond_t cond_camera;$/;"	v
@@ -80,6 +120,15 @@ cond_sms	data_global.c	/^pthread_cond_t cond_sms;$/;"	v
 cond_sqlite	data_global.c	/^pthread_cond_t cond_sqlite;$/;"	v
 cond_uart_snd	data_global.c	/^pthread_cond_t cond_uart_snd;$/;"	v
 create_table	main.c	/^extern void create_table ();$/;"	p	file:
+create_table	pthread_sqlite.c	/^int create_table(void)$/;"	f	signature:(void)
+create_uart_snd_queue	uart_snd_queue.c	/^uart_snd_q* create_uart_snd_queue(void)$/;"	f	signature:(void)
+create_uart_snd_queue	uart_snd_queue.h	/^extern uart_snd_q* create_uart_snd_queue(void);$/;"	p	signature:(void)
+data	sqlite_link_list.h	/^	struct sqlite_operation data;$/;"	m	struct:_snode_	typeref:struct:_snode_::sqlite_operation	access:public
+data_link	sqlite_link_list.h	/^	struct env_info_clien_addr data_link;$/;"	m	struct:_snode_	typeref:struct:_snode_::env_info_clien_addr	access:public
+deletGoods	pthread_sqlite.h	/^int deletGoods (int storageNum_t, int goodsKinds_t);  \/\/åˆ é™¤æŒ‡å®šç¼–å·è´§ç‰©ä¿¡æ¯$/;"	p	signature:(int storageNum_t, int goodsKinds_t)
+deleteGoods	pthread_sqlite.c	/^int deleteGoods (int storageNum_t, int goodsKinds_t)$/;"	f	signature:(int storageNum_t, int goodsKinds_t)
+delete_uart_snd_queue	uart_snd_queue.c	/^unsigned char delete_uart_snd_queue(uart_snd_q* q)$/;"	f	signature:(uart_snd_q* q)
+delete_uart_snd_queue	uart_snd_queue.h	/^extern unsigned char delete_uart_snd_queue(uart_snd_q* q);$/;"	p	signature:(uart_snd_q* q)
 dev_buzzer_fd	data_global.c	/^int dev_buzzer_fd;$/;"	v
 dev_camera_cmd	data_global.c	/^unsigned char dev_camera_cmd;	\/\/æ‘„åƒå¤´å‘½ä»¤$/;"	v
 dev_camera_fd	data_global.c	/^int dev_camera_fd;$/;"	v
@@ -90,17 +139,31 @@ dev_sms_cmd	data_global.c	/^unsigned char dev_sms_cmd;    \/\/çŸ­ä¿¡å‘½ä»¤$/;"	v
 dev_sms_fd	data_global.c	/^int dev_sms_fd;$/;"	v
 dev_uart_fd	data_global.c	/^int dev_uart_fd;$/;"	v
 dev_uart_snd_cmd	data_global.c	/^unsigned char dev_uart_snd_cmd; \/\/ä¸²å£å‘é€å‘½ä»¤$/;"	v
+enter_uart_snd_queue	uart_snd_queue.c	/^int enter_uart_snd_queue(uart_snd_q* q, unsigned char data)$/;"	f	signature:(uart_snd_q* q, unsigned char data)
+enter_uart_snd_queue	uart_snd_queue.h	/^extern int enter_uart_snd_queue(uart_snd_q* q, unsigned char data);$/;"	p	signature:(uart_snd_q* q, unsigned char data)
 env_info_clien_addr	data_global.h	/^struct env_info_clien_addr$/;"	s
 env_info_clien_addr::storage_no	data_global.h	/^	struct storage_info storage_no[STORAGE_NUM];	$/;"	m	struct:env_info_clien_addr	typeref:struct:env_info_clien_addr::storage_info	access:public
 env_info_clien_addr_s	data_global.h	/^struct env_info_clien_addr env_info_clien_addr_s;\/\/»º´æ»·¾³ĞÅÏ¢$/;"	v	typeref:struct:env_info_clien_addr
 env_operation_cmd	data_global.h	/^	int env_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
 fan_status	data_global.h	/^	unsigned char fan_status;	\/\/·çÉÈµÄ¿ª¹Ø×´Ì¬$/;"	m	struct:storage_info	access:public
+front	uart_snd_queue.h	/^	uart_snd_node* front;$/;"	m	struct:__anon1	access:public
+getCollect_Current_env	pthread_sqlite.h	/^int getCollect_Current_env (int storage_num_t);$/;"	p	signature:(int storage_num_t)
+getCollect_env	pthread_sqlite.h	/^int getCollect_env (char itime_t[], int storage_num_t);\/\/è·å¾—Collect_envè¡¨å‚æ•°$/;"	p	signature:(char itime_t[], int storage_num_t)
+getEnv	pthread_sqlite.h	/^int getEnv (struct env_info_clien_addr *env_info_clien_addr_t, int storageNum_t);  \/\/è·å¾—æ•´ä¸ªç¯å¢ƒå‚æ•°$/;"	p	signature:(struct env_info_clien_addr *env_info_clien_addr_t, int storageNum_t)
+getGoods	pthread_sqlite.h	/^int getGoods (int storageNum_t, int goods_kinds_t);  \/\/è·å¾—æŒ‡å®šç¼–å·è´§ç‰©ä¿¡æ¯$/;"	p	signature:(int storageNum_t, int goods_kinds_t)
+getGoodsInfo	pthread_sqlite.h	/^int getGoodsInfo (void);  \/\/è·å¾—æ‰€æœ‰è´§ç‰©ä¿¡æ¯$/;"	p	signature:(void)
 getGoodsMsg	data_global.h	/^struct getGoodsMsg$/;"	s
 getGoodsMsg::goodsno	data_global.h	/^	unsigned char goodsno;$/;"	m	struct:getGoodsMsg	access:public
 getGoodsMsg::goodsnum	data_global.h	/^	unsigned char goodsnum;$/;"	m	struct:getGoodsMsg	access:public
 getGoodsMsg::io	data_global.h	/^	unsigned char io;$/;"	m	struct:getGoodsMsg	access:public
 getGoodsMsg::sto_no	data_global.h	/^	unsigned char sto_no;$/;"	m	struct:getGoodsMsg	access:public
+get_collect_env	pthread_sqlite.c	/^int	get_collect_env(char itime_t[], int storage_num)$/;"	f	signature:(char itime_t[], int storage_num)
+get_current_env	pthread_sqlite.c	/^int	get_current_env(int storage_num)$/;"	f	signature:(int storage_num)
+get_env	pthread_sqlite.c	/^int get_env(struct env_info_clien_addr *env_info, int storageNum)	$/;"	f	signature:(struct env_info_clien_addr *env_info, int storageNum)
+get_goods	pthread_sqlite.c	/^int get_goods (int storageNum_t, int goodsKinds_t)$/;"	f	signature:(int storageNum_t, int goodsKinds_t)
+getenv_select	pthread_sqlite.c	/^int getenv_select(int storageNum, int no)$/;"	f	signature:(int storageNum, int no)
 goodsKinds	data_global.c	/^int goodsKinds;$/;"	v
+goodsKinds	sqlite_link_list.h	/^	int goodsKinds;$/;"	m	struct:_snode_	access:public
 goods_count	data_global.h	/^	unsigned int goods_count;$/;"	m	struct:storage_goods_info	access:public
 goods_info	data_global.h	/^	struct storage_goods_info goods_info[GOODS_NUM];$/;"	m	struct:storage_info	typeref:struct:storage_info::storage_goods_info	access:public
 goods_operation_cmd	data_global.h	/^	int goods_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
@@ -122,7 +185,13 @@ id_uart_snd	main.c	/^			id_uart_snd,$/;"	v
 illumination	data_global.h	/^	float illumination;$/;"	m	struct:storage_info	access:public
 illuminationMAX	data_global.h	/^	float illuminationMAX;$/;"	m	struct:storage_info	access:public
 illuminationMIN	data_global.h	/^	float illuminationMIN;$/;"	m	struct:storage_info	access:public
+insertCollect_env	pthread_sqlite.h	/^int insertCollect_env (struct env_info_clien_addr env_info_clien_addr_t, int storage_num);$/;"	p	signature:(struct env_info_clien_addr env_info_clien_addr_t, int storage_num)
+insertGoods	pthread_sqlite.h	/^int insertGoods (struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t, int goodsKinds_t);  \/\/æ’å…¥æ–°çš„è´§ç‰©ä¿¡æ¯$/;"	p	signature:(struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t, int goodsKinds_t)
+insert_collect_env	pthread_sqlite.c	/^int insert_collect_env(struct env_info_clien_addr env_info, storage_num)$/;"	f	signature:(struct env_info_clien_addr env_info, storage_num)
+insert_goods	pthread_sqlite.c	/^int	insert_goods(struct env_info_clien_addr env_info, int storageNum, int goodskinds)$/;"	f	signature:(struct env_info_clien_addr env_info, int storageNum, int goodskinds)
 io	data_global.h	/^	unsigned char io;$/;"	m	struct:getGoodsMsg	access:public
+is_empty_uart_snd_queue	uart_snd_queue.c	/^int is_empty_uart_snd_queue(uart_snd_q* q)$/;"	f	signature:(uart_snd_q* q)
+is_empty_uart_snd_queue	uart_snd_queue.h	/^extern int is_empty_uart_snd_queue(uart_snd_q* q);$/;"	p	signature:(uart_snd_q* q)
 led_status	data_global.h	/^	unsigned char led_status;$/;"	m	struct:storage_info	access:public
 main	main.c	/^int main(int argc, const char *argv[])$/;"	f	signature:(int argc, const char *argv[])
 msg	data_global.h	/^typedef struct msg{$/;"	s
@@ -144,30 +213,60 @@ mutex_slinklist	data_global.c	/^pthread_mutex_t mutex_slinklist;$/;"	v
 mutex_sms	data_global.c	/^pthread_mutex_t mutex_sms;$/;"	v
 mutex_sqlite	data_global.c	/^pthread_mutex_t mutex_sqlite;$/;"	v
 mutex_uart_snd	data_global.c	/^pthread_mutex_t mutex_uart_snd;$/;"	v
+next	sqlite_link_list.h	/^	struct _snode_ *next;$/;"	m	struct:_snode_	typeref:struct:_snode_::_snode_	access:public
+next	uart_snd_queue.h	/^	struct uart_node* next;$/;"	m	struct:uart_node	typeref:struct:uart_node::uart_node	access:public
 pthread_analysis	main.c	/^extern void *pthread_analysis (void *);			\/\/Êı¾İ½âÎöÏß³Ì$/;"	p	file:	signature:(void *)
+pthread_analysis	pthread_analysis.c	/^void *pthread_analysis(void *arg)$/;"	f	signature:(void *arg)
 pthread_camera	main.c	/^extern void* pthread_camera(void*);$/;"	p	file:	signature:(void*)
+pthread_camera	pthread_camera.c	/^void *pthread_camera(void *arg)$/;"	f	signature:(void *arg)
 pthread_led	main.c	/^extern void* pthread_led(void*);$/;"	p	file:	signature:(void*)
+pthread_led	pthread_led.c	/^void *pthread_led(void *arg)$/;"	f	signature:(void *arg)
 pthread_msgq	main.c	/^extern void* pthread_msgq(void*);$/;"	p	file:	signature:(void*)
+pthread_msgq	pthread_msgq.c	/^void *pthread_msgq(void *arg)$/;"	f	signature:(void *arg)
 pthread_refresh	main.c	/^extern void *pthread_refresh (void *);	\/\/¹²ÏíÄÚ´æÊı¾İË¢ĞÂÏß³Ì$/;"	p	file:	signature:(void *)
+pthread_refresh	pthread_refresh.c	/^void *pthread_refresh(void *arg)$/;"	f	signature:(void *arg)
 pthread_sms	main.c	/^extern void* pthread_sms(void*);$/;"	p	file:	signature:(void*)
+pthread_sms	pthread_sms.c	/^void *pthread_sms(void *arg)$/;"	f	signature:(void *arg)
 pthread_sqlite	main.c	/^extern void *pthread_sqlite (void *);			\/\/Êı¾İ¿âÏß³Ì$/;"	p	file:	signature:(void *)
+pthread_sqlite	pthread_sqlite.c	/^void *pthread_sqlite(void *arg)$/;"	f	signature:(void *arg)
 pthread_transfer	main.c	/^extern void *pthread_transfer (void *);	$/;"	p	file:	signature:(void *)
+pthread_transfer	pthread_transfer.c	/^void *pthread_transfer(void *arg)$/;"	f	signature:(void *arg)
 pthread_uart_snd	main.c	/^extern void* pthread_uart_snd(void*);$/;"	p	file:	signature:(void*)
+pthread_uart_snd	pthread_uart_snd.c	/^void *pthread_uart_snd(void *arg)$/;"	f	signature:(void *arg)
+rear	uart_snd_queue.h	/^	uart_snd_node* rear;$/;"	m	struct:__anon1	access:public
 receive_phone	data_global.c	/^char receive_phone[12] = "18688370343";$/;"	v
+reduceGoods	pthread_sqlite.h	/^int reduceGoods (struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t, int goodsKinds_t);$/;"	p	signature:(struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t, int goodsKinds_t)
+reduce_goods	pthread_sqlite.c	/^int	reduce_goods(struct env_info_clien_addr env_info, int storageNum, int goodskinds)$/;"	f	signature:(struct env_info_clien_addr env_info, int storageNum, int goodskinds)
 release_resource	main.c	/^void release_resource(int signo)$/;"	f	signature:(int signo)
 samplingTime	data_global.h	/^	char samplingTime[20]; \/\/»ñÈ¡²Ö¿â»·¾³ĞÅÏ¢µÄÊ±¼ä$/;"	m	struct:storage_info	access:public
 seg_status	data_global.h	/^	unsigned char seg_status; \/\/ÊıÂë¹ÜµÄ¿ª¹Ø×´Ì¬	$/;"	m	struct:storage_info	access:public
 semid	data_global.c	/^int semid;$/;"	v
 sendMsgQueue	data_global.c	/^void sendMsgQueue (long type, unsigned char text)$/;"	f	signature:(long type, unsigned char text)
 setLimit	main.c	/^void setLimit (int sto_no, float temMAX, float temMIN, float humMAX, float humMIN, float illMAX, float illMIN)$/;"	f	signature:(int sto_no, float temMAX, float temMIN, float humMAX, float humMIN, float illMAX, float illMIN)
+set_env	pthread_sqlite.c	/^int set_env(float val, int dev_no, int no)$/;"	f	signature:(float val, int dev_no, int no)
 shmid	data_global.c	/^int shmid;$/;"	v
+slinkhead	sqlite_link_list.h	/^slinklist slinkhead ,slinktail ;$/;"	v
+slinklist	sqlite_link_list.h	/^}slinknode, *slinklist;$/;"	t	typeref:struct:_snode_
+slinknode	sqlite_link_list.h	/^}slinknode, *slinklist;$/;"	t	typeref:struct:_snode_
+slinktail	sqlite_link_list.h	/^slinklist slinkhead ,slinktail ;$/;"	v
+sqlite_CreateEmptyLinklist	sqlite_link_list.c	/^slinklist sqlite_CreateEmptyLinklist ()$/;"	f
+sqlite_CreateEmptyLinklist	sqlite_link_list.h	/^extern slinklist sqlite_CreateEmptyLinklist ();$/;"	p	signature:()
+sqlite_EmptyLinklist	sqlite_link_list.h	/^extern int sqlite_EmptyLinklist (slinklist h);$/;"	p	signature:(slinklist h)
+sqlite_GetLinknode	sqlite_link_list.c	/^slinklist sqlite_GetLinknode (slinklist h)$/;"	f	signature:(slinklist h)
+sqlite_GetLinknode	sqlite_link_list.h	/^extern slinklist sqlite_GetLinknode (slinklist h);$/;"	p	signature:(slinklist h)
+sqlite_InsertLinknode	sqlite_link_list.c	/^int sqlite_InsertLinknode (int x, struct env_info_clien_addr y, $/;"	f	signature:(int x, struct env_info_clien_addr y, int storageNum_l, int goodsKinds_l)
+sqlite_InsertLinknode	sqlite_link_list.h	/^extern int sqlite_InsertLinknode (int x, struct env_info_clien_addr y, $/;"	p	signature:(int x, struct env_info_clien_addr y, int storageNum_l, int goodsKinds_l)
+sqlite_isemptyLinklist	sqlite_link_list.c	/^int sqlite_isemptyLinklist (slinklist h)$/;"	f	signature:(slinklist h)
 sqlite_operation	data_global.h	/^struct sqlite_operation$/;"	s
 sqlite_operation::collectEnv_operation_cmd	data_global.h	/^	int collectEnv_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
 sqlite_operation::env_operation_cmd	data_global.h	/^	int env_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
 sqlite_operation::goods_operation_cmd	data_global.h	/^	int goods_operation_cmd;$/;"	m	struct:sqlite_operation	access:public
 sqlite_operation::table_select_cmd	data_global.h	/^	int table_select_cmd;$/;"	m	struct:sqlite_operation	access:public
+sqlite_task	pthread_sqlite.c	/^void sqlite_task(struct env_info_clien_addr env_info, struct sqlite_operation sqlite_op, int storageNum, int goodskinds)$/;"	f	signature:(struct env_info_clien_addr env_info, struct sqlite_operation sqlite_op, int storageNum, int goodskinds)
+sqlite_task	pthread_sqlite.h	/^void sqlite_task(struct env_info_clien_addr env_info_clien_addr_t, struct sqlite_operation sqlite_operation_t, int storageNum_t, int goodsKinds_t);$/;"	p	signature:(struct env_info_clien_addr env_info_clien_addr_t, struct sqlite_operation sqlite_operation_t, int storageNum_t, int goodsKinds_t)
 sto_no	data_global.h	/^	unsigned char sto_no;$/;"	m	struct:getGoodsMsg	access:public
 storageNum	data_global.c	/^int storageNum;$/;"	v
+storageNum	sqlite_link_list.h	/^	int storageNum;$/;"	m	struct:_snode_	access:public
 storage_RT	data_global.h	/^struct storage_info storage_RT[STORAGE_NUM];$/;"	v	typeref:struct:storage_info
 storage_goods_info	data_global.h	/^struct storage_goods_info$/;"	s
 storage_goods_info::goods_count	data_global.h	/^	unsigned int goods_count;$/;"	m	struct:storage_goods_info	access:public
@@ -203,7 +302,16 @@ temperatureMAX	data_global.h	/^	float temperatureMAX;$/;"	m	struct:storage_info	
 temperatureMIN	data_global.h	/^	float temperatureMIN;$/;"	m	struct:storage_info	access:public
 text	data_global.h	/^	char text[MSG_SIZE];$/;"	m	struct:msg	access:public
 type	data_global.h	/^	long type;$/;"	m	struct:msg	access:public
+uart_node	uart_snd_queue.h	/^typedef struct uart_node$/;"	s
+uart_node::cmd	uart_snd_queue.h	/^	unsigned char cmd;$/;"	m	struct:uart_node	access:public
+uart_node::next	uart_snd_queue.h	/^	struct uart_node* next;$/;"	m	struct:uart_node	typeref:struct:uart_node::uart_node	access:public
+uart_snd_node	uart_snd_queue.h	/^}uart_snd_node;$/;"	t	typeref:struct:uart_node
+uart_snd_q	uart_snd_queue.h	/^}uart_snd_q;$/;"	t	typeref:struct:__anon1
 uart_snd_qhead	data_global.c	/^uart_snd_q* uart_snd_qhead;$/;"	v
+updateEnv	pthread_sqlite.h	/^int updateEnv (struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t);  \/\/æ›´æ–°æ•´ä¸ªç¯å¢ƒå‚æ•°$/;"	p	signature:(struct env_info_clien_addr env_info_clien_addr_t, int storageNum_t)
+update_env	pthread_sqlite.c	/^int update_env(struct env_info_clien_addr env_info, int storageNum)	$/;"	f	signature:(struct env_info_clien_addr env_info, int storageNum)
+viewGoods	pthread_sqlite.c	/^int viewGoods (int storageNum_t, int goodsKinds_t)$/;"	f	signature:(int storageNum_t, int goodsKinds_t)
+viewGoods	pthread_sqlite.h	/^int viewGoods (int storageNum_t, int goodsKinds_t);  \/\/æŸ¥çœ‹ä»“åº“æ˜¯å¦å­˜åœ¨æ­¤ç±»è´§ç‰©$/;"	p	signature:(int storageNum_t, int goodsKinds_t)
 x	data_global.h	/^	signed char x;$/;"	m	struct:storage_info	access:public
 y	data_global.h	/^	signed char y;$/;"	m	struct:storage_info	access:public
 z	data_global.h	/^	signed char z;$/;"	m	struct:storage_info	access:public
