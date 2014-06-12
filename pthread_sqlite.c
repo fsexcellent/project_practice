@@ -92,7 +92,7 @@ static int callback_getenv_s (void * para, int n_column, char ** column_value, c
 /*
 **初始化环境表，
 */
-int Init_table_env (void)
+int init_table_env (void)
 {
 	char sql[1024];
 	sqlite3 *db;
@@ -167,7 +167,7 @@ int create_table(void)
 		}
 		else
 		{
-			Init_table_env();
+			init_table_env();
 		}
 		
 		sprintf(sql, "create table if not exists collect_env(dev_no int not null,\
